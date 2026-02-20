@@ -11,6 +11,6 @@ import java.util.List;
 @Getter @Setter @NoArgsConstructor
 @Table(name="todo_list")
 public class TodoListEntity extends SuperEntity {
-    @OneToMany(mappedBy = "todoListId", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "todoList", cascade = CascadeType.ALL, orphanRemoval = true)
     List<TodoEntryEntity> todoEntries;
 }

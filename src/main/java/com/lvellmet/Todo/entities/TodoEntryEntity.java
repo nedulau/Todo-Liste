@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 public class TodoEntryEntity extends SuperEntity {
     @ManyToOne
     @JoinColumn(name="todo_list_id")
-    private TodoListEntity todoListId;
+    private TodoListEntity todoList;
 
     @Column(name="done")
     private Boolean done;
