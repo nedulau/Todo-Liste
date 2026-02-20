@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
 @Getter @Setter @NoArgsConstructor
 @Table(name="todo_entry")
 public class TodoEntryEntity extends SuperEntity {
-
     @ManyToOne
     @JoinColumn(name="todo_list_id")
     private TodoListEntity todoListId;
@@ -30,5 +29,4 @@ public class TodoEntryEntity extends SuperEntity {
 
     @Column(name="updated_at")
     private LocalDateTime updatedAt;
-
 }
